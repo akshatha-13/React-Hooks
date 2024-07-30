@@ -1,7 +1,15 @@
 import './App.css';
+import ComponentA from './UserContext/ComponentA';
+import ReducerOne from './UserReducer/ReducerOne';
+import ReducerTwo from './UserReducer/ReducerTwo';
+import ReducerThree from './UserReducer/ReducerThree';
+
 // import ClassCounter from './components/ClassCounter';
 import DataFetching from './components/DataFetching';
 import MouseContainer from './components/MouseContainer';
+import DataFetchingState from './UserReducer/DataFetchingState';
+import DataFetchingReducer from './UserReducer/DataFetchingReducer';
+import MainComponent from './UserReducer/ReduceContext/MainComponent';
 // import HookCounter from './components/HookCounter';
 // import HookCounterFive from './components/HookCounterFive';
 // import HookCounterFour from './components/HookCounterFour';
@@ -12,7 +20,8 @@ function App() {
   return (
     <div className="App">
     
-     <MouseContainer/>
+      <MainComponent/>
+
     </div>
   );
 }
