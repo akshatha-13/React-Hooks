@@ -10,6 +10,8 @@ import MouseContainer from './components/MouseContainer';
 import DataFetchingState from './UserReducer/DataFetchingState';
 import DataFetchingReducer from './UserReducer/DataFetchingReducer';
 import MainComponent from './UserReducer/ReduceContext/MainComponent';
+import { Navbar } from './Pages/Navbar';
+import Hero from './Pages/Hero';
 // import HookCounter from './components/HookCounter';
 // import HookCounterFive from './components/HookCounterFive';
 // import HookCounterFour from './components/HookCounterFour';
@@ -19,8 +21,12 @@ import MainComponent from './UserReducer/ReduceContext/MainComponent';
 function App() {
   return (
     <div className="App">
-    
-      <MainComponent/>
+    <>
+      <Navbar/>
+      <Hero/>
+    </>
+
+
 
     </div>
   );
